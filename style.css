@@ -6,6 +6,9 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .separator {
     border: none;
     margin: 1rem 0;
@@ -54,6 +57,28 @@
 }
 .btn-fb {
     background-color: #3b5998;
+}
+.btn-yellow {
+    color: white;
+    background-color: #E8B10F;
+}
+.go-top-content {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    
+}
+#go-top {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: #777777;
+    border: none;
+}
+#go-top i {
+    color: #fff;
+    font-size: 30px;
 }
 
 
@@ -250,6 +275,7 @@
 }
 .contact-form-container {
     width: 60%;
+    padding-bottom: 4rem;
 }
 .contact-form-container span{
     font-size: 25px;
@@ -258,6 +284,7 @@
 }
 .contact-form-container form {
     margin-top: 1.5rem;
+    
 }
 .contact-form-container form .input-content {
     display: flex;
@@ -286,6 +313,7 @@
 }
 .contact-form-container form .checkbox-content {
     display: flex;
+    margin-bottom: 2rem;
 }
 .contact-form-container form .checkbox-content label {
     color: #E8B10F;
@@ -295,6 +323,23 @@
     color: #E8B10F;
     font-weight: 600;
     margin-bottom: 1.5rem;
+}
+
+
+
+/* >>>> FOOTER <<<< */
+/* >>>> FOOTER <<<< */
+/* >>>> FOOTER <<<< */
+footer {
+    background-color: #252525;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer ul.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* >>>> !!! MEDIA QUERY !!! <<<< */

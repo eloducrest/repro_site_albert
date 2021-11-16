@@ -157,7 +157,7 @@
 
                     <div class="aside-apply">
                         <span>Postuler</span>
-                        <a href="#i-postulate" class="btn btn-grey">
+                        <a id="postulate" class="btn btn-grey">
                             Je postule
                             <i class="fas fa-user"></i>
                         </a>
@@ -246,11 +246,52 @@
                             </label>
                         </div>
 
+                        <button class="btn btn-yellow">Envoyer</button>
+
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
+    <div class="go-top-content">
+        <button id="go-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <footer>
+        <ul class="nav-list">
+            <li>&copy; Copyright</li>
+            <li>Disclaimer</li>
+            <li>RGPD</li>
+        </ul>
+    </footer>
 </body>
+
+
+<!-- Scroll to form-->
+<script>
+    let buttonPostulate = document.querySelector("#postulate");
+    let formPostulate = document.querySelector("#i-postulate");
+
+    function goToForm() {
+        formPostulate.scrollIntoView();
+    }
+
+    buttonPostulate.addEventListener('click', goToForm);
+</script>
+
+
+<!-- Scroll to top button -->
+<script>
+    let goTop = document.querySelector("#go-top");
+
+    function goToTop() {
+        window.scrollTo(0, 0);
+    }
+
+    goTop.addEventListener('click',goToTop);
+</script>
 
 </html>
