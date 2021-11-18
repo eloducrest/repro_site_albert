@@ -1,6 +1,14 @@
 /* >>>> GENERAL <<<<*/
 /* >>>> GENERAL <<<<*/
 /* >>>> GENERAL <<<<*/
+::selection {
+    color: white;
+    background-color: #E8B10F;
+}
+::-moz-selection {
+    color: white;
+    background-color: #E8B10F;
+}
 * {
 	box-sizing: border-box;
     margin: 0;
