@@ -26,13 +26,6 @@ html {
     background-color: black;
     opacity: 0.5;
 }
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 .title-separator-section {
     color: #E8B10F;
 }
@@ -132,8 +125,9 @@ html {
 }
 .section-top.top-img-bg {
     background-image: url('img/fond1intro.jpg');
-    background-position: 0 -250px;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     /*min-height: 250px;*/
 }
 .section-top .overlay {
@@ -191,8 +185,6 @@ html {
 
 /* >>>> JOB OFFER<<<< */
 .job-offer-content {
-    width: 75%;
-    float: left;
 }
 
 .job-offer-section {
@@ -209,10 +201,10 @@ html {
     margin-left: 1.5rem;
 }
 .job-offer-section .job-offer-text h3 {
-    font-size: 35px;
     font-weight: 300;
     margin-bottom: 1rem;
     color: #E8B10F;
+    word-break: break-word;
 }
 .job-offer-section .job-offer-text p {
     font-size: 17px;
@@ -232,7 +224,6 @@ html {
 
 /* >>>> ASIDE <<<< */
 .aside-job-offer {
-    float: right;
 }
 .aside-job-offer > .btn i {
     margin-left: 0.6rem;
@@ -270,7 +261,6 @@ html {
 /* >>>> SECTION CONTACT <<<< */
 /* >>>> SECTION CONTACT <<<< */
 .section-contact {
-    clear: both;
     background-color: #fafafa;
     border-top: 1px solid #e8e8e8;
     padding-top: 2.5rem;
@@ -283,7 +273,6 @@ html {
     background: linear-gradient(to right, rgba(208, 208, 208, 1) 0%, rgba(208, 208, 208, 0) 100%);
 }
 .contact-form-container {
-    width: 60%;
     padding-bottom: 4rem;
 }
 .contact-form-container span{
@@ -359,20 +348,13 @@ footer ul.nav-list {
         max-width: 1140px;
     }
 }
-/*
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
+@media (max-width: 991px) {
+    .aside-job-offer {
+        margin-top: 2.5rem;
     }
 }
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
+@media (max-width: 767px) {
+    .section-top .section-top-info-content {
+        max-width: 100%;
     }
 }
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-*/
